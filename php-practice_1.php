@@ -1,7 +1,7 @@
 <?php
 // Q1 変数と文字列
 $name = '「奈良」';
-echo '私の名前は'.$name.'です。';
+echo '私の名前は' . $name . 'です。';
 
 // Q2 四則演算
 $num = 5 * 4;
@@ -30,8 +30,7 @@ $message = ($age > 18) ? '成人です。' : '未成年です。';
 echo $message;
 
 // Q6 配列
-$prefecture = 
-[
+$prefecture = [
   '茨城県', 
   '東京都', 
   '栃木県', 
@@ -49,7 +48,7 @@ $ward = [
   '埼玉県' => 'さいたま市', 
   '栃木県' => '宇都宮市', 
   '群馬県' => '前橋市', 
-  '茨城県' => '水戸市'
+  '茨城県' => '水戸市',
 ];
 foreach($ward as $result){
   echo $result . "\n";
@@ -91,12 +90,12 @@ hello('金谷');
 hello('安藤');
 
 // Q11 関数-2
-function calcTaxInPrice($price = 1000) {
-  $price = $price * 1.1;
-  return $price;
+function calcTaxInPrice($price) {
+  return $price * 1.1;
 }
 $price = 1000;
-echo $price . '円の商品の税込価格は' . calcTaxInPrice() . '円です。';
+$taxInPrice = calcTaxInPrice($price);
+echo $price . '円の商品の税込価格は' . $taxInPrice . '円です。';
 
 // Q12 関数とif文
 function  distinguishNum($number) {

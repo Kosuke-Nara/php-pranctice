@@ -45,7 +45,7 @@ foreach($personalInfos as $x => $y){
 
 // 問題3
 $ageList = [25, 30, 18];
-$i = 0;
+$i = 0; 
 foreach($personalInfos as &$age){
   $age['age'] = $ageList[$i];
   $i++
@@ -105,8 +105,8 @@ echo $date->format('Y-m-d');
 
 // 問題2
 date_default_timezone_set('Asia/Tokyo');
-$date = new dateTime('2025-04-30'); 
-$date1 = new datetime('1992-04-25');
+$date = new DateTime('2025-04-30'); 
+$date1 = new Datetime('1992-04-25');
 $diff = $date->diff($date1);
 echo 'あの日から' . $diff->days. '日経過しました。';
 
