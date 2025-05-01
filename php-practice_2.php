@@ -94,7 +94,7 @@ class Student
 $yamada = new Student(120, '山田');
 $yamada->attend('PHP');
 
-
+  
 // Q5 定義済みクラス
 // 問題1
 date_default_timezone_set('Asia/Tokyo'); 
